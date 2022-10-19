@@ -1,0 +1,190 @@
+.sidebar {
+  @media screen and (max-width: 767px) {
+    width: 25%;
+  }
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  margin-right: 0px;
+  top: 80px;
+  background-color: $background-color;
+}
+
+.sidebar__title {
+  font-family: $font-family;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-large;
+  color: $white-color;
+  text-decoration: underline;
+  margin-left: 5px;
+  @media screen and (min-width: 768px) {
+    font-size: $font-size-large;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+
+.sidebar__box {
+  margin-top: 20px;
+}
+
+.contacts__margin {
+  margin-left: 5px;
+}
+
+.contacts__item {
+  align-items: center;
+  margin-top: 10px;
+}
+
+.contacts__link {
+  width: 100%;
+  height: 100%;
+  color: $white-color;
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-small;
+  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    font-size: $font-size-medium;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: $font-size-large;
+  }
+  &:hover,
+  :focus {
+    color: $hover-color;
+  }
+  &:hover .contacts__icon {
+    fill: $hover-color;
+  }
+}
+
+.contacts__icon {
+  fill: aquamarine;
+  width: 10px;
+  height: 8px;
+  margin-bottom: -1px;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    width: 22px;
+    height: 20px;
+  }
+}
+
+.skills__icon {
+  width: 14px;
+  height: 12px;
+  margin-bottom: -1px;
+  @media screen and (min-width: 768px) {
+    width: 22px;
+    height: 20px;
+  }
+}
+
+.accordion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $background-color;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  &.active,
+  &:hover,
+  :focus {
+    background-color: rgb(133, 141, 133);
+  }
+  &::after {
+    content: '\02795';
+    font-size: 13px;
+    color: aquamarine;
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
+.panel {
+  padding: 0 5px;
+  background-color: rgba(71, 118, 248, 40%);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.active:after {
+  content: '\2796';
+}
+
+.skills__item {
+  font-family: $font-family;
+  font-size: $font-size-small;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  color: $white-color-smoke;
+  &:first-child {
+    margin-top: 10px;
+  }
+  &::before {
+    content: '\271A';
+    color: aquamarine;
+    display: inline-block;
+    width: 5px;
+    height: auto;
+    margin-right: 5px;
+    @media screen and (min-width: 768px) {
+      margin-right: 15px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    font-size: $font-size-medium;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: $font-size-large;
+  }
+}
+
+.skills__text {
+  margin-left: 10px;
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-small;
+  color: $white-color;
+  @media screen and (min-width: 768px) {
+    font-size: $font-size-medium;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: $font-size-large;
+  }
+}
+
+.lang {
+  font-family: $font-family;
+  font-size: $font-size-medium;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  color: $white-color-smoke;
+  &:first-child {
+    margin-top: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: $font-size-medium;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: $font-size-large;
+  }
+}
+
+.sidebar__margin {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}

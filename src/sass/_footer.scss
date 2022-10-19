@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+.footer__text {
+  color: $white-color-smoke;
+  margin-top: 10px;
+  font-size: $font-size-large;
+}
