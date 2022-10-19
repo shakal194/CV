@@ -5,7 +5,7 @@
   "homepage": "https://shakal194.github.io/CV/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /cv/"
+    "build": "parcel build src/*.html --public-url /CV/"
   },
   "repository": {
     "type": "git",
